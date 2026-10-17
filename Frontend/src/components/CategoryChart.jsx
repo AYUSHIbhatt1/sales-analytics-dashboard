@@ -23,9 +23,9 @@ const CategoryChart = () => {
   useEffect(() => {
     async function getCategories() {
       try {
-        const response = await axios.get(
-          "http://localhost:3000/api/dashboard/categories"
-        );
+       const response = await axios.get(
+  `${import.meta.env.VITE_API_URL}/api/dashboard/categories`
+);
 
         const categories = response.data.categories.map((item) => ({
           category: item._id,

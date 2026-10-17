@@ -18,9 +18,9 @@ const RevenueCard = () => {
   useEffect(() => {
     async function getRevenue() {
       try {
-        const response = await axios.get(
-          "http://localhost:3000/api/dashboard/revenue"
-        );
+       const response = await axios.get(
+  `${import.meta.env.VITE_API_URL}/api/dashboard/revenue`
+);
 
         const revenueData = response.data.revenue.map((item) => ({
           month: new Date(

@@ -8,9 +8,9 @@ const SummaryCard = () => {
   useEffect(() => {
     async function getdata() {
       try {
-        const response = await axios.get(
-          "http://localhost:3000/api/dashboard/summary"
-        );
+       const response = await axios.get(
+  `${import.meta.env.VITE_API_URL}/api/dashboard/summary`
+);
 
         setSummary(response.data.summary);
       } catch (error) {

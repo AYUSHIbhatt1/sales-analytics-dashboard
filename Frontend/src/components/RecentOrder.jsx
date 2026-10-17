@@ -9,8 +9,8 @@ const RecentOrder = () => {
     async function getOrders() {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/order"
-        );
+  `${import.meta.env.VITE_API_URL}/api/dashboard/order`
+);
 
     const latestOrders = response.data.orders
   .sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))
