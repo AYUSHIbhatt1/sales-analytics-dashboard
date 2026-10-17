@@ -2,7 +2,7 @@
 
 A full-stack sales analytics dashboard that helps users monitor sales performance, analyze revenue trends, explore product categories, and track recent customer orders through an interactive interface.
 
-🌐 **Live Demo:** [Sales Analytics Dashboard](YOUR_FRONTEND_RENDER_URL)
+🌐 **Live Demo:** [Sales Analytics Dashboard](https://sales-analytics-dashboard-1-zgoe.onrender.com)
 
 ## ✨ Features
 
