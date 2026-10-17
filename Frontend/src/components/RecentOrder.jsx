@@ -9,7 +9,7 @@ const RecentOrder = () => {
     async function getOrders() {
       try {
         const response = await axios.get(
-  `${import.meta.env.VITE_API_URL}/api/dashboard/order`
+  `${import.meta.env.VITE_API_URL}/api/order`
 );
 
     const latestOrders = response.data.orders
