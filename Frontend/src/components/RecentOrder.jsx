@@ -11,7 +11,8 @@ const RecentOrder = () => {
         const response = await axios.get(
   `${import.meta.env.VITE_API_URL}/api/order`
 );
-
+console.log("Orders API response:", response.data);
+console.log("Orders array:", response.data.orders);
     const latestOrders = response.data.orders
   .sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))
   .slice(0, 5);
